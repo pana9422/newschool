@@ -7,8 +7,6 @@ const navbarTop = navbar.offsetTop
 
 const navbarScrollTop = () => {
 
-
-    console.log(navbarTop)
     if (window.scrollY >= navbarTop) {
         navbar.classList.add('p-fixed')
     } else {
