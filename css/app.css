@@ -109,7 +109,7 @@ strong,
 em {
   margin: 0;
   font-family: var(--text-font-family);
-  line-height: var(--text-line-height);
+  line-height: inherit;
   font-size: var(--font-size-md);
 }
 section,
@@ -150,9 +150,12 @@ strong {
   align-items: center;
   line-height: var(--text-line-height);
   gap: 0.6em;
+  border: 1px solid transparent;
 
   transition: background-color 0.3s, transform .3s;
-  border: 1px solid transparent;
+}
+.btn:hover{
+  transform: scale(105%);
 }
 .btn:active{
   transform: scale(95%);
@@ -246,16 +249,11 @@ strong {
   display: flex;
   width: 100%;
   font-size: var(--font-size-xl);
-  font-weight: var(--medium);
   color: var(--dark-200);
 
 }
-.navbar-link:hover {
-  color: var(--france-600);
-}
 .navbar-link.active {
   color: var(--france-800);
-  font-weight: var(--bolder);
 }
 @media screen and (min-width: 768px) {
   .navbar .container {
