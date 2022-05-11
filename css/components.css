@@ -172,7 +172,8 @@
   text-transform: uppercase;
 }
 .header__link--active{
-  color: var(--france-800);
+  color: var(--france-600);
+  border-bottom: .2rem solid var(--france-600);
 }
 .header__link--button{
   color: var(--france-600);
