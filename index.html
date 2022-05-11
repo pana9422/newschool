@@ -9,55 +9,238 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script defer src="./js/app.js"></script>
     <script defer src="./js/navbar.js"></script>
 </head>
 
 <body class="layout">
     <header class="header">
-        <section class="banner">
-            <div class="banner__container container">
-                <div class="banner__detail">
-                    <h1 class="banner__title"><strong class="text-amber-300">New School</strong>, Abriendo puertas a un
-                        nuevo mundo</h1>
-                    <p class="banner__description">Cada año nuestros estudiantes logran ingresar a la universidad,
-                        matricula ahora a tu hijo/a para que sea el próximo universitario.</p>
-                    <a href="./whatsapp.html" class="banner__action btn btn-light">¡Separa tu vacante ahora!</a>
-                </div>
-                <picture class="banner__container-image">
-                    <img class="banner__image" src="./assets/slide-3.png" alt="">
-                </picture>
-
-            </div>
-        </section>
-        <nav class="navbar" id="navbar">
-            <div class="container">
-                <a href="./" class="navbar-brand">
-                    <img class="navbar-image" src="./assets/brand.png" alt="IE New School">
-                </a>
-                <button class="navbar-navigation btn btn-light">
-                    <i class="btn-icon fa-solid fa-bars"></i>
+        <div class="header__container container">
+            <div class="header__brand">
+                <a class="header__logo" href="./"><img class="header__image" src="./assets/brand.png"
+                        alt="IE New School"></a>
+                <button class="header__button-navigation">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <div class="navbar-nav-container">
-                    <ul class="navbar-nav">
-                        <li class="navbar-item"><a class="navbar-link btn active" href="./">Inicio</a></li>
-                        <li class="navbar-item"><a class="navbar-link btn" href="./sobre-nosotros.html">Sobre
-                                nosotros</a></li>
-                        <li class="navbar-item"><a class="navbar-link btn" href="./programas.html">Programas
-                                educativos</a></li>
-                        <li class="navbar-item"><a class="navbar-link btn" href="./calendario.html">Calendario
-                                escolar</a></li>
-                    </ul>
-                    <div class="navbar-action">
-                        <a class="btn btn-primary-alt" href="whatsapp.html">Contactanos</a>
-                    </div>
-                </div>
-
             </div>
-        </nav>
+            <nav class="header__navbar">
+                <div class="container">
+                    <a class="header__link header__link--active" href="./">Inicio</a>
+                    <a class="header__link" href="./sedes.html">Sedes</a>
+                    <a class="header__link" href="./programas.html">Programa educativo</a>
+                    <a class="header__link" href="./calendario.html">Calendario escolar</a>
+                    <a class="header__link" href="./nosotros.html">Nosotros</a>
+                    <a class="header__link header__link--button" href="#">!Matriculate ahora¡</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
+        <section class="banner">
+            <div class="banner__container container">
+                <h1 class="banner__title">
+                    <strong class="text-amber-300">New School</strong>,
+                    Abriendo puertas a un nuevo mundo
+                </h1>
+                <p class="banner__description">Cada año nuestros estudiantes logran ingresar a la universidad,
+                    matricula ahora a tu hijo/a para que sea el próximo universitario.</p>
+                <a href="./whatsapp.html" class="btn btn-primary-alt">¡Separa tu vacante ahora!</a>
+            </div>
+        </section>
+        <section class="level">
+            <div class="level__container container">
+                <div class="level__heading">
+                    <h2 class="level__title">La educación en diferentes niveles</h2>
+                    <p class="level__detail">Preparamos a nuestros alumnos a disfrutar el proceso educativo y lo
+                        acompañamos en su formación </p>
+                </div>
+                <div class="level__content">
+                    <div class="card text-esmerald-500">
+                        <div class="card__container">
+                            <img class="card__image" src="./assets/level-inicial.jpg" alt="Nivel inicial en New School">
+                            <div class="card__content">
+                                <h3 class="card__title">NIVEL INICIAL</h3>
+                                <p class="card__description">Se desarrollan habilidades comunicativas, sociales y
+                                    afectivas para desembolverse de manera asertiva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-sky-500">
+                        <div class="card__container">
+                            <img class="card__image" src="./assets/level-primaria.jpg"
+                                alt="Nivel inicial en New School">
+                            <div class="card__content">
+                                <h3 class="card__title">NIVEL PRIMARIA</h3>
+                                <p class="card__description">Se desarrollan habilidades comunicativas, sociales y
+                                    afectivas para desembolverse de manera asertiva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-purple-500">
+                        <div class="card__container">
+                            <img class="card__image" src="./assets/level-secundaria.jpg"
+                                alt="Nivel inicial en New School">
+                            <div class="card__content">
+                                <h3 class="card__title">NIVEL SECUNDARIA</h3>
+                                <p class="card__description">Se desarrollan habilidades comunicativas, sociales y
+                                    afectivas para desembolverse de manera asertiva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="teacher">
+            <div class="teacher__container container">
+                <h2 class="teacher__title">Profesores calificados</h2>
+                <p class="teacher__detail">Nuestros docentes son los formadores y guías de nuestros estudiantes, es por
+                    ello que nos ocupamos en elegir a los mejores profesionales.</p>
+                <div class="teacher__content">
+                    <div class="teacher__description">
+                        <span class="teacher__icon"><i class="fa-solid fa-user-graduate"></i></span>
+                        <h3 class="teacher__subtitle">Profesionales titulados</h3>
+                        <p class="teacher__text">Contamos con +20 docentes que nos brindan compromiso y confianza.</p>
+                    </div>
+                    <div class="teacher__description">
+                        <span class="teacher__icon"><i class="fa-solid fa-chart-line"></i></span>
+                        <h3 class="teacher__subtitle">Experiencia comprobada</h3>
+                        <p class="teacher__text">Años trabajando con nuestros docentes y demostraron calidad educativa.
+                        </p>
+                    </div>
+                    <div class="teacher__description">
+                        <span class="teacher__icon"><i class="fa-solid fa-heart"></i></span>
+                        <h3 class="teacher__subtitle">Pasión por la educación</h3>
+                        <p class="teacher__text">Nuestros docentes aman lo que hacen por que creen en la educación y los
+                            niños</p>
+                    </div>
+                    <div class="teacher__photos">
+                        <div class="teacher__animation">
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
+                            </picture>
+                            <picture class="teacher__picture">
+                                <img class="teacher__image" src="./assets/user-2.jpg" alt="Profesor de Newschool">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="about">
             <div class="about__container container">
                 <div class="about__heading">
@@ -95,304 +278,6 @@
                 </div>
             </div>
         </section>
-        <section class="teacher">
-            <div class="teacher__container container">
-                <h2 class="teacher__title">Profesores calificados</h2>
-                <p class="teacher__detail">Nuestros docentes son los formadores y guías de nuestros estudiantes, es por
-                    ello que nos ocupamos en elegir a los mejores profesionales.</p>
-                <div class="teacher__content">
-                    <div class="teacher__description">
-                        <span class="teacher__icon"><i class="fa-solid fa-user-graduate"></i></span>
-                        <h3 class="teacher__subtitle">Profesionales titulados</h3>
-                        <p class="teacher__text">Contamos con +20 docentes que nos brindan compromiso y confianza.</p>
-                    </div>
-                    <div class="teacher__description">
-                        <span class="teacher__icon"><i class="fa-solid fa-chart-line"></i></span>
-                        <h3 class="teacher__subtitle">Experiencia comprobada</h3>
-                        <p class="teacher__text">Años trabajando con nuestros docentes y demostraron calidad educativa.
-                        </p>
-                    </div>
-                    <div class="teacher__description">
-                        <span class="teacher__icon"><i class="fa-solid fa-heart"></i></span>
-                        <h3 class="teacher__subtitle">Pasión por la educación</h3>
-                        <p class="teacher__text">Nuestros docentes aman lo que hacen por que creen en la educación y los
-                            niños</p>
-                    </div>
-                    <div class="teacher__photos">
-                        <div class="teacher__animation">
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-
-                        </div>
-                        <div class="teacher__repeat">
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image"
-                                    src="https://www.cinemascomics.com/wp-content/uploads/2020/12/tony-stark-iron-man-vengadores-endgame.jpg"
-                                    alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-                            <picture class="teacher__picture">
-                                <img class="teacher__image" src="./assets/user.jpg" alt="Profesor de Newschool">
-                            </picture>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <sectrion class="galery">
             <img class="galery__image" src="./assets/galery-1.jpg" alt="Imagen de galeria 1">
             <img class="galery__image" src="./assets/galery-2.jpg" alt="Imagen de galeria 2">
@@ -405,33 +290,50 @@
         </sectrion>
         <section class="testimony">
             <div class="testimony__container container">
-                <h3 class="testimony__title">Testimonios</h3>
-                <span class="testimony__icon"><i class="fa-solid fa-quote-left"></i></span>
+                <h3 class="testimony__title">Alumnos ingresantes</h3>
+                <span class="testimony__description">Cada año nuestros alumnos ingresan a la universidad, que el proximo sea tu hijo, ¡matriculate ahora!</span>
                 <div class="testimony__content">
                     <button class="testimony__button btn" id="testimony__back"><i
                             class="fa-solid fa-angle-left"></i></button>
 
                     <div class="testimony__card testimony__card--show" data-id="1">
+                        
+                        <picture class="testimony__picture">
+                            <img class="testimony__image" src="./assets/student.jpg" alt="Alumna de Newschool">
+                        </picture>
+                        <span class="testimony__name">Huarcaya Gonzales, Fiorela</span>
+                        <span class="testimony__profesion">Ing. de Sistemas</span>
+                        
                         <p class="testimony__comment">
-                            “ Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book”
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book
                         </p>
-                        <img class="testimony__image" src="./assets/user.jpg" alt="Miguel J Medina">
-                        <span class="testimony__name">Miguel J Medina</span>
+                        <span class="testimony__profesion">Ingreso a la UNMSM 2019 - I</span>
                     </div>
                     <div class="testimony__card" data-id="2">
+                        
+                        <picture class="testimony__picture">
+                            <img class="testimony__image" src="./assets/student.jpg" alt="Alumna de Newschool">
+                        </picture>
+                        <span class="testimony__name">Ccanto Flores, Mayli</span>
+                        <span class="testimony__profesion">Escuela de Derechos</span>
+                        
                         <p class="testimony__comment">
-                            “ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste saepe in beatae, dolores necessitatibus aperiam!”
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quia eligendi debitis sed optio inventore. Rem id repudiandae ut voluptates.
                         </p>
-                        <img class="testimony__image" src="./assets/user-2.jpg" alt="Miguel J Medina">
-                        <span class="testimony__name">Mayli Ccanto</span>
+                        <span class="testimony__profesion">Ingreso a la UNMSM 2019 - I</span>
                     </div>
                     <div class="testimony__card" data-id="3">
+                        <picture class="testimony__picture">
+                            <img class="testimony__image" src="./assets/student.jpg" alt="Alumna de Newschool">
+                        </picture>
+                        <span class="testimony__name">Chavez Medina, Massiel</span>
+                        <span class="testimony__profesion">Ing de Software</span>
+                        
                         <p class="testimony__comment">
-                            “ Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste saepe in beatae, dolores necessitatibus aperiam!”
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi accusamus in similique quibusdam quidem. Obcaecati!
                         </p>
-                        <img class="testimony__image" src="./assets/galery-3.jpg" alt="Miguel J Medina">
-                        <span class="testimony__name">Melanny Ccanto</span>
+                        <span class="testimony__profesion">Ingreso a la UNMSM 2019 - I</span>
                     </div>
                     <button class="testimony__button btn" id="testimony__next"><i
                             class="fa-solid fa-angle-right"></i></button>
@@ -443,22 +345,23 @@
         <div class="footer__newschool">
             <p><strong class="text-amber-300">New School</strong> - Abriendo puertas a un nuevo mundo</p>
             <div class="footer__social">
-                <a href="#" class="btn btn-light">
-                    <i class="btn-icon fa-brands fa-facebook-f"></i>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#" class="btn btn-light">
-                    <i class="btn-icon fa-brands fa-youtube"></i>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="#" class="btn btn-light">
-                    <i class="btn-icon fa-brands fa-twitter"></i>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="#" class="btn btn-light">
-                    <i class="btn-icon fa-brands fa-instagram"></i>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
         <small class="footer__design">
-            Este sitio esta diseñador por <a class="text-amber-300" href="pana9422.github.io/portafolio">Miguel J Medina</a>
+            Este sitio esta diseñador por <a class="text-amber-300" href="pana9422.github.io/portafolio">Miguel J
+                Medina</a>
         </small>
     </footer>
 </body>

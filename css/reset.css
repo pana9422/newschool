@@ -1,0 +1,68 @@
+/* Reset */
+html {
+    font-size: 10px;
+    font-family: var(--text-font-family);
+    line-height: var(--text-line-height);
+    
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+    font-size: var(--font-size-md);
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: var(--title-font-family);
+    line-height: var(--title-line-height);
+  }
+  p,
+  span,
+  strong,
+  em {
+    margin: 0;
+    font-family: var(--text-font-family);
+    line-height: inherit;
+    font-size: var(--font-size-md);
+  }
+  section,
+  main,
+  div,
+  nav,
+  ul,
+  li,
+  picture {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  button{
+    -webkit-tap-highlight-color: transparent;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  strong {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
