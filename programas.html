@@ -1,101 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>IE New School - Conoce nuestras sedes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 50px;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
+    <link rel="stylesheet" href="./css/sedes.css">
+    <script defer src="./js/navbar.js"></script>
 </head>
-<body>
 
-<header>
-  <div class="header">
-    <h2>Scroll Down</h2>
-    <p>Scroll down to see the sticky effect.</p>
-  </div>
-
-  <div id="navbar">
-    <a class="active" href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)">News</a>
-    <a href="javascript:void(0)">Contact</a>
-  </div>
-</header>
-
-<div class="content">
-  <h3>Sticky Navigation Example</h3>
-  <p>The navbar will stick to the top when you reach its scroll position.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.scrollY >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
+<body class="layout">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__brand">
+                <a class="header__logo" href="./"><img class="header__image" src="./assets/brand.png"
+                        alt="IE New School"></a>
+                <button class="header__button-navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav class="header__navbar">
+                <div class="container">
+                    <a class="header__link" href="./">Inicio</a>
+                    <a class="header__link" href="./sedes.html">Sedes</a>
+                    <a class="header__link header__link--active" href="./programas.html">Programa educativo</a>
+                    <a class="header__link" href="./calendario.html">Calendario escolar</a>
+                    <a class="header__link" href="./nosotros.html">Nosotros</a>
+                    <a class="header__link header__link--button" href="#">!Matriculate ahora¡</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__container container">
+                <h1 class="banner__title">
+                    PROGRAMA EDUCATIVO
+                </h1>
+                <p class="banner__description">Los programas educativos ayudan al estudiante a entender y aprender la formación escolar</p>
+            </div>
+        </section>
+        <section class="sede">
+            <div class="sede__container container">
+                <div class="card text-esmerald-500">
+                    <div class="card__container">
+                        <a class="card__image" target="_blank"
+                            href="https://www.google.com.pe/maps/dir//NEW+SCHOOL+HUAYCAN,+Av.+15+De+Julio,+Ate+15483/@-12.0176426,-76.8267596,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9105e90081709e1d:0x9b80a5e094f965cc!2m2!1d-76.8249135!2d-12.0193842!3e0?hl=es">
+                            <img src="./assets/gps.jpg" alt="Nivel inicial en New School">
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">SEDE ATE</h3>
+                            <span class="card__subtitle">Niveles</span>
+                            <p class="card__description">Inicial, Primaria y Secundaria</p>
+                            <span class="card__subtitle">Dirección</span>
+                            <p class="card__description">UCV 90 Lt 15 Zona D Huaycan</p>
+                            <span class="card__subtitle">Telefonos</span>
+                            <p class="card__description">987 654 321 - 901 234 567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-sky-500">
+                    <div class="card__container">
+                        <a class="card__image" target="_blank"
+                            href="https://www.google.com.pe/maps/dir//NEW+SCHOOL+HUAYCAN,+Av.+15+De+Julio,+Ate+15483/@-12.0176426,-76.8267596,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x9105e90081709e1d:0x9b80a5e094f965cc!2m2!1d-76.8249135!2d-12.0193842!3e0?hl=es">
+                            <img src="./assets/gps.jpg" alt="Nivel inicial en New School">
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">SEDE CAJAMARQUILLA</h3>
+                            <span class="card__subtitle">Niveles</span>
+                            <p class="card__description">Inicial, Primaria y Secundaria</p>
+                            <span class="card__subtitle">Dirección</span>
+                            <p class="card__description">UCV 90 Lt 15 Zona D Huaycan</p>
+                            <span class="card__subtitle">Telefonos</span>
+                            <p class="card__description">987 654 321 - 901 234 567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__newschool">
+            <p><strong class="text-amber-300">New School</strong> - Abriendo puertas a un nuevo mundo</p>
+            <div class="footer__social">
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <small class="footer__design">
+            Este sitio esta diseñador por <a class="text-amber-300" href="pana9422.github.io/portafolio">Miguel J
+                Medina</a>
+        </small>
+    </footer>
 </body>
+
 </html>

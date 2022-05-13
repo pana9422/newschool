@@ -236,3 +236,31 @@
     transform: scale(95%);
   }
 }
+/* Footer */
+.footer{
+  background-color: var(--dark-400);
+  color: var(--neutral-100);
+}
+.footer__newschool{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  text-align: center;
+  padding: 2.4rem;
+}
+.footer__social{
+  display: flex;
+  gap: 1.2rem;
+  opacity: .5;
+}
+.footer__design{
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #333;
+  gap: .6rem;
+
+}
