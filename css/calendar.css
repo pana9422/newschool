@@ -1,0 +1,50 @@
+@import url(variables.css);
+@import url(reset.css);
+@import url(components.css);
+@import url(utilities.css);
+
+.calendar__container{
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+.calendar__card{
+    border: 1px solid var(--neutral-100);
+    padding: 1.2rem;
+    color: var(--dark-200);
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    align-items: flex-start;
+}
+.calendar__date{
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+}
+.calendar__hour{
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+}
+.calendar__subtitle{
+    font-size: var(--font-size-md);
+}
+.calendar__tag{
+    border: 1px solid;
+    border-color: currentColor;
+    padding: 0 .6rem;
+    font-size: var(--font-size-sm);
+    border-radius: .6rem;
+}
+@media screen and (min-width: 768px) {
+    .calendar__container{
+        padding: 4.8rem;
+        grid-template-columns: repeat(2, 1fr) ;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .calendar__container{
+        grid-template-columns: repeat(3, 1fr) ;
+        gap: 1.2rem;
+    }
+}

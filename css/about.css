@@ -1,0 +1,36 @@
+@import url(variables.css);
+@import url(reset.css);
+@import url(components.css);
+@import url(utilities.css);
+
+.about__container{
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    color: var(--dark-200);
+}
+.about__paragraph{
+    height: max-content;
+}
+
+.about__image{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+@media screen and (min-width: 1024px) {
+    .about__container{
+        padding: 4.8rem;
+        flex-direction: row;
+    }
+    .about__image{
+        height: 40vh;
+        max-width: 50rem;
+        object-fit: cover;
+        object-position: center;
+        float: right;
+        padding: 0 0 1.2rem 1.2rem;
+    }
+}
