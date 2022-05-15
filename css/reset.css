@@ -14,7 +14,8 @@ html {
   body {
     margin: 0;
     font-size: var(--font-size-md);
-    overflow-x: hidden;
+    box-sizing: border-box;
+    max-width: 100vw;
   }
   h1,
   h2,
@@ -43,6 +44,9 @@ html {
   li,
   picture {
     margin: 0;
+  }
+  main{
+    max-width: 100vw;
   }
   ul {
     list-style: none;
